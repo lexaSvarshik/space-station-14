@@ -188,11 +188,20 @@ public partial class ListingData : IEquatable<ListingData>
     [DataField]
     public TimeSpan RestockTime = TimeSpan.Zero;
 
-    /// <summary>
-    /// Options for discount - from max amount down to how much item costs can be cut by discount, absolute value.
-    /// </summary>
+    // WD START
     [DataField]
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> DiscountDownTo = new();
+    public int SaleLimit = 3;
+
+    [DataField]
+    public bool SaleBlacklist;
+
+    public int DiscountValue;
+
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> OldCost = new();
+
+    [DataField]
+    public List<string> Components = new();
+    // WD END
 
     public bool Equals(ListingData? listing)
     {
@@ -227,6 +236,39 @@ public partial class ListingData : IEquatable<ListingData>
         return true;
     }
 
+    /// <summary>
+    /// Creates a unique instance of a listing. ALWAWYS USE THIS WHEN ENUMERATING LISTING PROTOTYPES
+    /// DON'T BE DUMB AND MODIFY THE PROTOTYPES
+    /// </summary>
+    /// <returns>A unique copy of the listing data.</returns>
+    public object Clone()
+    {
+        return new ListingData
+        {
+            ID = ID,
+            Name = Name,
+            Description = Description,
+            Categories = Categories,
+            Cost = Cost,
+            Conditions = Conditions,
+            Icon = Icon,
+            Priority = Priority,
+            ProductEntity = ProductEntity,
+            ProductAction = ProductAction,
+            ProductUpgradeID = ProductUpgradeID,
+            ProductActionEntity = ProductActionEntity,
+            ProductEvent = ProductEvent,
+            PurchaseAmount = PurchaseAmount,
+            RestockTime = RestockTime,
+            // WD START
+            SaleLimit = SaleLimit,
+            SaleBlacklist = SaleBlacklist,
+            DiscountValue = DiscountValue,
+            OldCost = OldCost,
+            Components = Components,
+            // WD END
+        };
+    }
 }
 
 /// <summary>

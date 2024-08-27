@@ -271,6 +271,14 @@ public sealed partial class StoreSystem
         };
         RaiseLocalEvent(ref buyFinished);
 
+        //WD EDIT START
+        if (listing.SaleLimit != 0 && listing.DiscountValue > 0 && listing.PurchaseAmount >= listing.SaleLimit)
+        {
+            listing.DiscountValue = 0;
+            listing.Cost = listing.OldCost;
+        }
+        //WD EDIT END
+
         UpdateUserInterface(buyer, uid, component);
     }
 

@@ -17,8 +17,25 @@
     - UplinkWearables
     - UplinkJob
     - UplinkPointless
+    - UplinkSales # WD EDIT
+  currencyWhitelist:
+  - Telecrystal
+  sales: # WD EDIT
+    enabled: true
+    minMultiplier: 0.2
+    maxMultiplier: 0.8
+    minItems: 3
+    maxItems: 8
+    salesCategory: UplinkSales
     currencyWhitelist:
     - Telecrystal
+    sales: # WD EDIT
+    enabled: true
+    minMultiplier: 0.2
+    maxMultiplier: 0.8
+    minItems: 3
+    maxItems: 8
+    salesCategory: UplinkSales
     balance:
       Telecrystal: 0
     currencyInsertTime: 1.15 #SS220-insert-currency-doafter

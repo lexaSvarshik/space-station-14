@@ -145,10 +145,11 @@ public sealed partial class StoreMenu : DefaultWindow
             }
         }
 
-        var listingInStock = GetListingPriceString(listing);
-        var discount = GetDiscountString(listing);
+        var newListing = new StoreListingControl(listing, GetListingPriceString(listing), hasBalance, texture);
 
-        var newListing = new StoreListingControl(listing, listingInStock, discount, hasBalance, texture);
+        if (listing.DiscountValue > 0) // WD EDIT
+            newListing.StoreItemBuyButton.AddStyleClass("ButtonColorRed");
+
         newListing.StoreItemBuyButton.OnButtonDown += args
             => OnListingButtonPressed?.Invoke(args, listing);
 
