@@ -21,6 +21,13 @@
     - Telecrystal
     balance:
       Telecrystal: 0
+    sales: # WD EDIT
+      enabled: true
+      minMultiplier: 0.2
+      maxMultiplier: 0.8
+      minItems: 3
+      maxItems: 8
+      salesCategory: UplinkSales
     currencyInsertTime: 1.15 #SS220-insert-currency-doafter
 
 - type: entity

@@ -10,6 +10,7 @@
     Telecrystal: 3
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkRevolverPython
@@ -20,6 +21,7 @@
     Telecrystal: 8 # Originally was 13 TC but was not used due to high cost
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 # Inbuilt suppressor so it's sneaky + more expensive.
 - type: listing
@@ -31,6 +33,7 @@
     Telecrystal: 4
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 # Poor accuracy, slow to fire, cheap option
 - type: listing
@@ -42,6 +45,7 @@
     Telecrystal: 1
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkEsword
@@ -53,6 +57,7 @@
     Telecrystal: 8
   categories:
   - UplinkWeaponry
+  saleLimit: 2 # WD EDIT
 
 - type: listing
   id: UplinkEnergyDagger
@@ -64,6 +69,7 @@
     Telecrystal: 2
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkThrowingKnivesKit
@@ -108,6 +114,7 @@
 #          - NukeOpsUplink
 #          - LoneOpsUplink
 # SS220-uplink-fix-end
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkDisposableTurret
@@ -132,6 +139,7 @@
 #        tags:
 #          - NukeOpsUplink
 # SS220-uplink-fix-end
+  saleLimit: 2 # WD EDIT
 
 - type: listing
   id: UplinkEshield
@@ -149,6 +157,7 @@
       tags:
       - NukeOpsUplink
       - LoneOpsUplink #SS220-uplink-fix
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkSniperBundle
@@ -160,6 +169,7 @@
     Telecrystal: 12
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkC20RBundle
@@ -171,6 +181,7 @@
     Telecrystal: 17
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkBulldogBundle
@@ -182,6 +193,7 @@
     Telecrystal: 20
   categories:
   - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkGrenadeLauncherBundle
@@ -205,6 +217,7 @@
     blacklist:
       components:
       - SurplusBundle
+  saleLimit: 1 # WD EDIT
 
 
 - type: listing
@@ -223,6 +236,8 @@
       tags:
       - NukeOpsUplink
       - LoneOpsUplink
+  - UplinkWeapons
+  saleLimit: 1 # WD EDIT
 
 # Explosives
 
@@ -355,6 +370,7 @@
       tags:
       - NukeOpsUplink
       - LoneOpsUplink #SS220-uplink-fix
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkC4Bundle
@@ -365,6 +381,7 @@
     Telecrystal: 12 #you're buying bulk so its a 25% discount
   categories:
   - UplinkExplosives
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkEmpGrenade
@@ -405,6 +422,7 @@
     blacklist:
       components:
       - SurplusBundle
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkClusterGrenade
@@ -1298,6 +1316,7 @@
         tags:
           - NukeOpsUplink
           - LoneOpsUplink
+  saleBlacklist: true # WD EDIT
 
 - type: listing
   id: UplinkDeathRattle
@@ -1471,6 +1490,7 @@
     whitelist:
       tags:
       - NukeOpsUplink
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkHardsuitSyndieElite
@@ -1490,6 +1510,7 @@
         - NukeOpsUplink
         - LoneOpsUplink
 #ss220-fix-uplink-end
+  saleLimit: 1 # WD EDIT
 
 - type: listing
   id: UplinkClothingOuterHardsuitJuggernaut
@@ -1513,6 +1534,7 @@
       - NukeOpsUplink
       - LoneOpsUplink
 # ss220-fix-uplink-end
+  saleLimit: 1 # WD EDIT
 
 #SS220 Syndie visor buff begin
 #- type: listing

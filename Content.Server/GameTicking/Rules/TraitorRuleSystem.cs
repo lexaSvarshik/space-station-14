@@ -115,7 +115,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
                 return false;
 
             //ss220 fix no codewords for traitor w/o pda start
-            if (pda != null && _uplink.AddUplink(traitor, startingBalance, giveDiscounts: true))
+            if (pda != null && _uplink.AddUplink(traitor, startingBalance))
             {
                 // Give traitors their codewords and uplink code to keep in their character info menu
                 code = EnsureComp<RingerUplinkComponent>(pda.Value).Code;
