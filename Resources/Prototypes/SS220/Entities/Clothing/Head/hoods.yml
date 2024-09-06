@@ -1,4 +1,23 @@
 - type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodChaplainHoodWhite
+  categories: [ HideSpawnMenu ]
+  name: chaplain's white hood
+  description: Maximum piety in this star system.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hoods/chaplainwhite.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hoods/chaplainwhite.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
   parent: ClothingHeadHatHoodWinterBase
   id: ClothingHeadHatHoodWinterCentcomm
   categories: [ HideSpawnMenu ]
@@ -9,3 +28,47 @@
     sprite: SS220/Clothing/Head/Hoods/Coat/hoodcentcom.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hoods/Coat/hoodcentcom.rsi
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodHeartFinaly
+  name: сердечный капюшон
+  description: Капюшон.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hats/HeartHood.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hats/HeartHood.rsi
+
+#Экзокостюм утилизаторов - капюшон
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodExosuitSalvage
+  categories: [ HideSpawnMenu ]
+  name: капюшон экзокостюма утилизатора
+  description: Капюшон из крепкой ткани, обеспечивающий небольшую защиту.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hoods/salvage_exosuit.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hoods/salvage_exosuit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatFloppa # не уверен что не спонсорское, проверить
+  name: шлёпафон
+  description: Шлёпашон
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi

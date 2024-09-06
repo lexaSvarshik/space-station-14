@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackWhiteDuffelCaptain
+  name: белый вещмешок капитана
+  description: Дорогая белая сумка, выданная за выслугу лет капитану.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Back/Duffels/whitecapduffel.rsi
