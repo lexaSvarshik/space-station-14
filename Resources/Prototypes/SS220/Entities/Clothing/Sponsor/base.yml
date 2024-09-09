@@ -1,3 +1,5 @@
+# © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
+
 - type: entity
   abstract: true
   parent: BaseItem
@@ -150,9 +152,9 @@
   - type: WirelessNetworkConnection
     range: 1200
   - type: StationLimitedNetwork
-  - type: Tag #SS220-pr: FIX CLOTHING TAGS 
-    tags: #SS220-pr: FIX CLOTHING TAGS 
-      - ClothMade #SS220-pr: FIX CLOTHING TAGS 
+  - type: Tag #SS220-pr: FIX CLOTHING TAGS
+    tags: #SS220-pr: FIX CLOTHING TAGS
+      - ClothMade #SS220-pr: FIX CLOTHING TAGS
 
 - type: entity
   abstract: true
