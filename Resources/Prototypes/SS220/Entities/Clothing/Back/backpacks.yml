@@ -2,32 +2,6 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: ClothingBackSatchelSRT
-  name: сумка ГСН
-  description: Прочная сумка спецназа NanoTrasen.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Satchel/SRTSatchel.rsi
-  - type: Storage
-    grid:
-    - 0,0,6,3
-
-- type: entity
-  noSpawn: false
-  parent: ClothingBackSatchelSRT
-  id: ClothingBackSatchelSRTFilled
-  suffix: Заполненный
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSecurity
-      - id: WeaponAdvancedRevolver
-      - id: WeaponSubMachineGunAtreides
-      - id: MagazinePistolSubMachineGun
-      - id: MagazinePistolSubMachineGun
-
-- type: entity
-  parent: ClothingBackpack
   id: ClothingBackpackWhiteCaptain
   name: белый рюкзак капитана
   description: Дорогая белая сумка, выданная за выслугу лет капитану.
