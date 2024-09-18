@@ -107,3 +107,7 @@
 # EscapePod
 - type: Tag
   id: EscapePod
+
+# SP-91-RC
+- type: Tag
+  id: MagazineMagnumSubMachineGunSP-91-RC
