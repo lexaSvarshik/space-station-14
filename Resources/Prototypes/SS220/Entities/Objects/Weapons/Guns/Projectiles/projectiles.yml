@@ -157,3 +157,19 @@
     radius: 3.5
     color: blue
     energy: 0.5
+
+- type: hitscan
+  id: Pulse2
+  damage:
+    types:
+      Heat: 35
+      Structural: 400
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_blue
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: beam_blue
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_blue
