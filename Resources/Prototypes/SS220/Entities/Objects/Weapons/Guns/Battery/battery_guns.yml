@@ -13,5 +13,14 @@
     proto: Pulse2
     fireCost: 100
   - type: Battery
-    maxCharge: 40000
-    startingCharge: 40000
+    maxCharge: 400
+    startingCharge: 400
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: Pulsekill
+      name: режия для убийства
+      fireCost: 1
+    - proto: PulseDESTROY
+      name: режим для УНИЧТОЖЕНИЯ
+      fireCost: 5
+      soundGunshot:  /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
