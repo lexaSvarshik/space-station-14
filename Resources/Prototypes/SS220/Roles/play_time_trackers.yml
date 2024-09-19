@@ -49,3 +49,10 @@
 
 - type: playTimeTracker
   id: AntagInitialInfected
+
+# Centcom
+- type: playTimeTracker
+  id: JobDeathSquadCommander
+
+- type: playTimeTracker
+  id: JobDeathSquadHealer
