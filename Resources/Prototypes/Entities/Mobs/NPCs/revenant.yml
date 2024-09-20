@@ -83,3 +83,13 @@
       - Alive
       - Dead
   #ss220 spec fix end
+  #ss220 revenant buff start
+  - type: DamageOnAttacked
+    damage:
+      types:
+        Cold: 10
+  - type: Electrified #idk this seems lame
+    shockTime: 4
+    requirePower: false
+    #ss220 revenant buff end
+          
