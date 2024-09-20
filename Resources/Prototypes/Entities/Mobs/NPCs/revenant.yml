@@ -77,13 +77,11 @@
     - RevenantTheme
   - type: Speech
     speechVerb: Ghost
-  #ss220 spec fix start
+  #reserve revenant buff start
   - type: MobState
     allowedStates:
       - Alive
       - Dead
-  #ss220 spec fix end
-  #ss220 revenant buff start
   - type: DamageOnAttacked
     damage:
       types:
@@ -98,5 +96,8 @@
     shockDamage: 2
     requirePower: false
     ignoreInsulation: true
-  #ss220 revenant buff end
-          
+  - type: Electrified #idk this seems lame
+    shockTime: 4
+    requirePower: false
+    #reserve revenant buff end
+
