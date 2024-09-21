@@ -118,4 +118,9 @@ public sealed partial class ElectrifiedComponent : Component
 
     [DataField]
     public float Probability = 1f;
+
+    //SS220 Add ignore insulation begin
+    [DataField]
+    public bool IgnoreInsulation = false;
+    //SS220 Add ignore insulation end
 }
