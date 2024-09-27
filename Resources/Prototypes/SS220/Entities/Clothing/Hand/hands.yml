@@ -56,19 +56,6 @@
     sprite: SS220/Clothing/Hands/Gloves/orangejanitor.rsi
 
 - type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesYsatyu
-  name: ysatyu gloves
-  description: Not a single glass of moonshine will slip out of your hands.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Hands/ysatyu.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Hands/ysatyu.rsi
-  - type: Fiber
-    fiberColor: fibers-red
-
-- type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesDQ
   name: боевые перчатки ЭС
