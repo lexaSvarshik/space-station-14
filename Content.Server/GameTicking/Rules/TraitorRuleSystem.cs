@@ -111,6 +111,8 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
             // creadth: we need to create uplink for the antag.
             // PDA should be in place already
             var pda = _uplink.FindUplinkTarget(traitor);
+            if (pda == null || !_uplink.AddUplink(traitor, startingBalance))
+                return false;
 
             //ss220 fix no codewords for traitor w/o pda start
             if (pda != null && _uplink.AddUplink(traitor, startingBalance, giveDiscounts: true))
