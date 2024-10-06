@@ -665,9 +665,6 @@
   name: uplink-cigarettes-name
   description: uplink-cigarettes-desc
   productEntity: CigPackSyndicate
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
@@ -943,9 +940,6 @@
 #   name: uplink-antimov-law-name
 #   description: uplink-antimov-law-desc
 #   productEntity: AntimovCircuitBoard
-#   discountCategory: usualDiscounts
-#   discountDownTo:
-#     Telecrystal: 10
 #   cost:
 #     Telecrystal: 14
 #   categories:
@@ -962,9 +956,6 @@
   name: uplink-antimov-law-name
   description: uplink-antimov-law-desc
   productEntity: AntimovCircuitBoard
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 36 # 20 default | SS220 Antimov Laws hide changes
   cost:
     Telecrystal: 40 # 24 default | SS220 Antimov Laws hide changes
   categories:
@@ -1021,9 +1012,6 @@
 #  name: uplink-singularity-beacon-name
 #  description: uplink-singularity-beacon-desc
 #  productEntity: SingularityBeacon
-#  discountCategory: usualDiscounts
-#  discountDownTo:
-#    Telecrystal: 4
 #  cost:
 #    Telecrystal: 12
 #  categories:
@@ -1232,8 +1220,6 @@
   description: uplink-emp-implanter-desc
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: shield }
   productEntity: EmpImplanter
-  discountCategory: veryRareDiscounts
-  discountDownTo:
     Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
@@ -1302,8 +1288,6 @@
   description: uplink-uplink-implanter-desc
   icon: { sprite: /Textures/Objects/Devices/communication.rsi, state: old-radio }
   productEntity: UplinkImplanter
-  discountCategory: usualDiscounts
-  discountDownTo:
     Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
@@ -1435,9 +1419,6 @@
   description: uplink-eva-syndie-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Suits/eva_syndicate.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateEVABundle
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
