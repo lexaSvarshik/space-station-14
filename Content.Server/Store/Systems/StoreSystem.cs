@@ -25,6 +25,7 @@ public sealed partial class StoreSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!; //SS220-insert-currency-doafter
     [Dependency] private readonly StoreDiscountSystem _storeDiscount = default!; // WD EDIT
 
     public override void Initialize()

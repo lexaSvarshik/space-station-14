@@ -12,7 +12,7 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -26,7 +26,7 @@
   cost:
     Telecrystal: 8 # Originally was 13 TC but was not used due to high cost
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 1 # WD EDIT
 
 # Inbuilt suppressor so it's sneaky + more expensive.
@@ -41,7 +41,7 @@
   cost:
     Telecrystal: 4
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 1 # WD EDIT
 
 # Poor accuracy, slow to fire, cheap option
@@ -53,7 +53,7 @@
   cost:
     Telecrystal: 1
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -68,7 +68,7 @@
   cost:
     Telecrystal: 8
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 2 # WD EDIT
 
 - type: listing
@@ -83,7 +83,7 @@
   cost:
     Telecrystal: 2
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -111,7 +111,31 @@
   cost:
     Telecrystal: 8
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
+  saleLimit: 1 # WD EDIT
+
+- type: listing
+  id: UplinkEswordDouble
+  name: uplink-esword-double-name
+  description: uplink-esword-double-desc
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+  productEntity: EnergySwordDouble
+  cost:
+    Telecrystal: 16
+  categories:
+  - UplinkWeaponry
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+        - SurplusBundle
+# SS220-uplink-fix-begin
+#   - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
+#          - LoneOpsUplink
+# SS220-uplink-fix-end
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -255,7 +279,6 @@
       tags:
       - NukeOpsUplink
       - LoneOpsUplink
-  - UplinkWeapons
   saleLimit: 1 # WD EDIT
 
 # Explosives
@@ -1696,7 +1719,6 @@
     whitelist:
       tags:
       - NukeOpsUplink
-  - UplinkArmor
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -1720,7 +1742,6 @@
         - NukeOpsUplink
         - LoneOpsUplink
 #ss220-fix-uplink-end
-  - UplinkArmor
   saleLimit: 1 # WD EDIT
 
 - type: listing
@@ -1748,7 +1769,6 @@
       - NukeOpsUplink
       - LoneOpsUplink
 # ss220-fix-uplink-end
-  - UplinkArmor
   saleLimit: 1 # WD EDIT
 
 #SS220 Syndie visor buff begin
