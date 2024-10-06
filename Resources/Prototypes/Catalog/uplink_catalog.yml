@@ -665,11 +665,9 @@
   name: uplink-cigarettes-name
   description: uplink-cigarettes-desc
   productEntity: CigPackSyndicate
-  #ss220 1 tc uplink sales fix start
-  #discountCategory: rareDiscounts
-  #discountDownTo:
-    #Telecrystal: 1
-  #ss220 1 tc uplink sales fix end
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
@@ -1234,11 +1232,9 @@
   description: uplink-emp-implanter-desc
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: shield }
   productEntity: EmpImplanter
-  #ss220 1 tc uplink sales fix start
-  #discountCategory: veryRareDiscounts
-  #discountDownTo:
-    #Telecrystal: 1
-  #ss220 1 tc uplink sales fix end
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
@@ -1306,11 +1302,9 @@
   description: uplink-uplink-implanter-desc
   icon: { sprite: /Textures/Objects/Devices/communication.rsi, state: old-radio }
   productEntity: UplinkImplanter
-  #ss220 1 tc uplink sales fix start
-  #discountCategory: usualDiscounts
-  #discountDownTo:
-    #Telecrystal: 1
-  #ss220 1 tc uplink sales fix end
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
@@ -1441,11 +1435,9 @@
   description: uplink-eva-syndie-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Suits/eva_syndicate.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateEVABundle
-  #ss220 1 tc uplink sales fix start
-  #discountCategory: rareDiscounts
-  #discountDownTo:
-    #Telecrystal: 1
-  #ss220 1 tc uplink sales fix end
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
   cost:
     Telecrystal: 1 #SS220-underused-uplinks-stuff
   categories:
