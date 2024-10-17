@@ -39,3 +39,33 @@
     stealGroup: FireAxe
   - type: IgniteOnMeleeHit
     fireStacks: -4
+
+- type: entity
+  id: BorgFireAxeFlaming
+  name: Пожарный топор киборга
+  parent: BorgFireAxe
+  description: Зачем сражаться с огнем с помощью топора, если можно сражаться с огнем и с топором? Теперь с прочной прорезиненной рукояткой!
+  components:
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+  - type: IgniteOnMeleeHit
+    fireStacks: 1
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/fireaxeflaming.rsi
+    state: icon
+# Corvax-HiddenDesc-Start
+  - type: HiddenDescription
+    entries:
+    - label: corvax-hidden-desc-FireAxeFlaming-syndicate
+      whitelistMind:
+        components:
+          - TraitorRole
+          - NukeOperative
+    - label: corvax-hidden-desc-FireAxeFlaming-research
+      jobRequired:
+        - ResearchAssistant
+        - ResearchDirector
+        - Scientist
+        - Borg
+# Corvax-HiddenDesc-End
+
