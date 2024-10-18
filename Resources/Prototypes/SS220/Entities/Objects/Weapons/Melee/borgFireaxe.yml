@@ -1,8 +1,8 @@
 - type: entity
-  name: Пожарный топор киборга
+  name: borg fire axe
   parent: [BaseItem]
   id: BorgFireAxe
-  description: Воистину, оружие безумной машины. Кому придет в голову бороться с огнем с помощью топора?
+  description: A special shortened axe for engineering cyborgs, designed to fight fire and an abundance of walls!
   components:
   - type: Tag
     tags:
@@ -35,16 +35,14 @@
   - type: Prying
   - type: UseDelay
     delay: 1
-  - type: StealTarget
-    stealGroup: FireAxe
   - type: IgniteOnMeleeHit
     fireStacks: -4
 
 - type: entity
   id: BorgFireAxeFlaming
-  name: Пожарный топор киборга
+  name: borg fire axe
   parent: BorgFireAxe
-  description: Зачем сражаться с огнем с помощью топора, если можно сражаться с огнем и с топором? Теперь с прочной прорезиненной рукояткой!
+  description: Cybersun's modified fire axe, suitable for all types of borg chassis! It sets victims on fire on impact.
   components:
   - type: MeleeWeapon
     wideAnimationRotation: 135
