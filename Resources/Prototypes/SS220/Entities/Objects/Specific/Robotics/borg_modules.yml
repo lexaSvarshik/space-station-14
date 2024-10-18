@@ -34,7 +34,7 @@
 
 - type: entity
   id: BorgModuleFlamingAxe
-  parent: [ BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: Модуль киборга с модифицированным пожарным топором
   description: "Техническая деталь, дающая киборгам полноразмерный пожарный топор, поджигающий жертв!"
   components:
