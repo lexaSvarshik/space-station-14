@@ -40,6 +40,32 @@
   - type: Clothing
     sprite: SS220/Clothing/Head/Hats/whitecapcap.rsi
 
+- type: entity
+  parent: ClothingHeadHatCaptain
+  id: ClothingHeadWhiteCapHardhat
+  name: captain's white hardhat
+  description: It's good being the white king.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hats/whitecaptainhat.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hats/whitecaptainhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadWhiteCapHat
+  name: captain's white hat
+  description: A special white hat made to order for the captain.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Head/Hats/whitecaphat.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Head/Hats/whitecaphat.rsi
+  - type: Tag
+    tags:
+    - Ian
+    - HamsterWearable
+
   # Глава Персонала
 - type: entity
   parent: ClothingHeadBase
@@ -140,7 +166,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatSeniorService
-  name: фуражка ведущего сервисного отдела
+  name: фуражка сервисного администратора #SS220 rename
   description: Большая, стильная голова
   components:
   - type: Sprite
@@ -538,3 +564,32 @@
     sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
+
+# WMT Ebent begin
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadKiver
+  name: kiver
+  description: The headdress of a soldier of the Kingdom's great army.
+  suffix: HOCebent
+  components:
+    - type: Sprite
+      sprite: SS220/Clothing/Head/Hats/kiver.rsi
+    - type: Clothing
+      sprite: SS220/Clothing/Head/Hats/kiver.rsi
+    - type: Tag
+      tags:
+      - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadPithHelmet
+  name: pith helmet
+  description: Army helmet of the army of the River Republic.
+  suffix: HOCebent
+  components:
+    - type: Sprite
+      sprite: SS220/Clothing/Head/Hats/pith_helmet.rsi
+    - type: Clothing
+      sprite: SS220/Clothing/Head/Hats/pith_helmet.rsi
+# WMT Ebent end

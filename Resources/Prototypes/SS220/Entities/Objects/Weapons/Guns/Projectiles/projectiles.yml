@@ -56,6 +56,20 @@
     knockdownAmount: 1 #weaponBalance
 
 
+- type: entity
+  id: SMEmitterBolt
+  parent: EmitterBolt
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: SS220/Structures/Power/Generation/Supermatter/smemitter.rsi
+    layers:
+      - state: projectile
+        shader: unshaded
+  - type: SuperMatterEmitterBolt
+  - type: SuperMatterExtraConsumable
+    additionalMatterOnConsumption: 4
+    additionalEnergyOnConsumption: 20
 
 
 ##Made by MIXnikita for SS220
