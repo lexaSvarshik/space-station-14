@@ -218,7 +218,7 @@
   - type: ProjectileSpread
     proto: BulletLaser
     count: 5
-    spread: 30
+    spread: 15
 
 - type: entity
   name: laser bolt
@@ -241,6 +241,6 @@
         Radiation: 4
         Poison: -8
   - type: ProjectileSpread
-    proto: BulletLaser
+    proto: BulletLaserHeal
     count: 3
-    spread: 30
+    spread: 10

@@ -42,23 +42,18 @@
       shader: unshaded
   - type: Clothing
     sprite: SS220/Objects/Weapons/Guns/pulse_shotgun.rsi
-  - type: Gun
-    fireRate: 2.5
-  - type: HitscanBatteryAmmoProvider
-    proto: Pulse2
-    fireCost: 100
   - type: Battery
-    maxCharge: 400
-    startingCharge: 400
-- type: BatteryWeaponFireModes
+    maxCharge: 40
+    startingCharge: 40
+  - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserDestroy
       name: режим для УНИЧТОЖЕНИЯ
-      fireCost: 40
+      fireCost: 1
       soundGunshot: /Audio/Weapons/Guns/Gunshots/taser2.ogg
       magState: mag
     - proto: BulletLaserHeal
       name: режим для лечения
-      fireCost: 62.5
+      fireCost: 1.75
       soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
       magState: heal-mag
