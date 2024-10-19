@@ -24,3 +24,41 @@
       name: режим для УНИЧТОЖЕНИЯ
       fireCost: 5
       soundGunshot:  /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+
+- type: entity
+  name: пульсовый дробовик
+  parent: WeaponPulseRifle
+  id: WeaponPulseShotgun
+  description: Энергетическая дробовик с новейшей техников лечения.
+  suffix: Винтовка, Death Squad, Эскадрон Смерти
+  components:
+  - type: Sprite
+    sprite: SS220/Objects/Weapons/Guns/pulse_shotgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: SS220/Objects/Weapons/Guns/pulse_shotgun.rsi
+  - type: Gun
+    fireRate: 2.5
+  - type: HitscanBatteryAmmoProvider
+    proto: Pulse2
+    fireCost: 100
+  - type: Battery
+    maxCharge: 400
+    startingCharge: 400
+- type: BatteryWeaponFireModes
+    fireModes:
+    - proto: BulletLaserDestroy
+      name: режим для УНИЧТОЖЕНИЯ
+      fireCost: 40
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+      magState: mag
+    - proto: BulletLaserHeal
+      name: режим для лечения
+      fireCost: 62.5
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+      magState: heal-mag
