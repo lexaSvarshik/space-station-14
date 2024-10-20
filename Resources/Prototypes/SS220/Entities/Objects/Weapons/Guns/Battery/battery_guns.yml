@@ -24,6 +24,7 @@
     startingCharge: 400
   - type: HitscanBatteryAmmoProvider
     proto: Pulsekill
+    fireCost: 1
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: Pulsekill
@@ -56,6 +57,7 @@
     startingCharge: 400
   - type: ProjectileBatteryAmmoProvider
     proto: BulletLaserDestroy
+    fireCost: 10
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserDestroy
