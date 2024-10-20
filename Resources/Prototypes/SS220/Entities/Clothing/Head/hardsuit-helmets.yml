@@ -121,4 +121,4 @@
     radius: 6
   - type: PressureProtection
     highPressureMultiplier: 0.32
-    lowPressureMultiplier:
+    lowPressureMultiplier: 1000

@@ -126,7 +126,6 @@
     state: icon
   - type: MeleeWeapon
     autoAttack: true
-    angle: 0
     wideAnimationRotation: -135
     attackRate: 4
     damage:
