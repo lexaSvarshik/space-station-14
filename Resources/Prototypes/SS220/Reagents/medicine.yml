@@ -162,9 +162,9 @@
 
 - type: reagent
   id: HolyMolyWater
-  name: the essence of holy water
+  name: reagent-name-holymolywater
   group: Medicine
-  desc: Concentrated holy water that cures all diseases and even death.
+  desc: reagent-desc-holymolywater
   physicalDesc: reagent-physical-desc-holymoly
   flavor: HolyMoly
   color: "#e8e8e8"

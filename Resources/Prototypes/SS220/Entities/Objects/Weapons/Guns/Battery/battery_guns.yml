@@ -9,9 +9,6 @@
   components:
   - type: Gun
     fireRate: 2.5
-  - type: HitscanBatteryAmmoProvider
-    proto: Pulse2
-    fireCost: 100
   - type: Battery
     maxCharge: 400
     startingCharge: 400

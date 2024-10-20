@@ -77,8 +77,6 @@
     state: icon
   - type: Clothing
     sprite: SS220/Clothing/Shoes/Boots/dq_magboots.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
@@ -91,6 +89,3 @@
       moles:
         - 1.153853429 # oxygen
         - 1.153853429 # nitrogen
-  - type: Item
-    sprite: null
-    size: Normal
