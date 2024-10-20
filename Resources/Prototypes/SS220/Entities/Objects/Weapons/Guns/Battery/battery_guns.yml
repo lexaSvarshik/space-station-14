@@ -2,11 +2,21 @@
 # Death Squad
 - type: entity
   name: pulse rifle
-  parent: WeaponPulseRifle
+  parent: BaseWeaponBattery
   id: WeaponPulseRifle2
   description: A heavy-duty energy rifle capable of destroying structures.
   suffix: Винтовка, Death Squad
   components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
   - type: Gun
     fireRate: 2.5
   - type: Battery
@@ -24,7 +34,7 @@
 
 - type: entity
   name: pulse shotgun
-  parent: WeaponPulseRifle
+  parent: BaseWeaponBattery
   id: WeaponPulseShotgun
   description: An energy shotgun with the latest treatment technique.
   suffix: Death Squad
@@ -40,17 +50,17 @@
   - type: Clothing
     sprite: SS220/Objects/Weapons/Guns/pulse_shotgun.rsi
   - type: Battery
-    maxCharge: 40
-    startingCharge: 40
+    maxCharge: 400
+    startingCharge: 400
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserDestroy
       name: firemode-name-kill
-      fireCost: 1
+      fireCost: 10
       soundGunshot: /Audio/Weapons/Guns/Gunshots/taser2.ogg
       magState: mag
     - proto: BulletLaserHeal
       name: firemode-name-heal
-      fireCost: 1.75
+      fireCost: 17.5
       soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
       magState: heal-mag
