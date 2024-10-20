@@ -165,12 +165,13 @@
   name: the essence of holy water
   group: Medicine
   desc: Concentrated holy water that cures all diseases and even death.
-  physicalDesc: невозможное
+  physicalDesc: reagent-physical-desc-holymoly
   flavor: HolyMoly
   color: "#e8e8e8"
   metabolisms:
     Medicine:
       effects:
+      - !type:HealthChange
         damage:
           groups:
             Brute: -10

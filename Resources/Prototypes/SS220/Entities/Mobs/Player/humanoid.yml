@@ -195,7 +195,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
     id: DeathsquadCommanderPDA
-    ears: ClothingHeadsetAltCentCom
     pocket1: DoorRemoteCommand
 
 - type: startingGear
@@ -203,11 +202,9 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
     id: DeathsquadHealerPDA
-    ears: ClothingHeadsetAltCentCom
 
 - type: startingGear
   id: DeathSquadOperativeGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
     id: DeathsquadPDA
-    ears: ClothingHeadsetAltCentCom
