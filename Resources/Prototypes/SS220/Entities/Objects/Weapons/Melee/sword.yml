@@ -144,7 +144,6 @@
   - type: DisarmMalus
     malus: 0
   - type: Reflect
-    enabled: false
   #todo
   # - type: Clothing
   #   sprite: SS220/Objects/Weapons/Melee/chainsword.rsi

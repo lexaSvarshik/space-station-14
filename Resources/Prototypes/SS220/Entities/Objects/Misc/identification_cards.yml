@@ -182,8 +182,7 @@
     layers:
     - state: deathsquad
   - type: IdCard
-    jobTitle: Эскадрон Смерти
-    fullName: Командир
+    jobTitle: job-name-dq-commander
   - type: PresetIdCard
     job: DeathsquadCommander
 
@@ -196,7 +195,6 @@
     layers:
     - state: deathsquad
   - type: IdCard
-    jobTitle: Эскадрон Смерти
-    fullName: Специалист
+    jobTitle: job-name-dq-specialist
   - type: PresetIdCard
     job:  DeathsquadHealer
