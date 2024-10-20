@@ -22,6 +22,8 @@
   - type: Battery
     maxCharge: 400
     startingCharge: 400
+  - type: ProjectileBatteryAmmoProvider
+    proto: Pulsekill
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: Pulsekill
@@ -52,6 +54,8 @@
   - type: Battery
     maxCharge: 400
     startingCharge: 400
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletLaserDestroy
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserDestroy
