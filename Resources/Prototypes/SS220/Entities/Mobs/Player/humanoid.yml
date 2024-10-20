@@ -83,6 +83,7 @@
           Brute: -1
           Burn: -1
           Toxin: -1
+          Airloss: -0.5
 
 - type: randomHumanoidSettings
   id: DeathSquadHealerRandom
@@ -109,6 +110,7 @@
           Brute: -0.8
           Burn: -0.8
           Toxin: -0.8
+          Airloss: -0.4
 
 - type: randomHumanoidSettings
   id: DeathSquadOperativeRandom
@@ -132,6 +134,7 @@
           Brute: -0.6
           Burn: -0.6
           Toxin: -0.6
+          Airloss: -0.3
 
 - type: entity
   name: commander of the Death Squadron

@@ -1,6 +1,6 @@
 - type: job
   id: DeathsquadCommander
-  name: job-name-dq-сommander
+  name: job-name-dq-commander
   description: job-description-deathsquad
   playTimeTracker: JobDeathSquadCommander
   setPreference: false
