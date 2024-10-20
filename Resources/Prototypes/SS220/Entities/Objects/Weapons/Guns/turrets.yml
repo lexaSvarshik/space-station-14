@@ -123,8 +123,8 @@
 - type: entity
   parent: BaseWeaponTurret
   id: WeaponTurretDeathSquad
-  name: Турель
-  description: Турель с системой автоматического огня.
+  name: turret
+  description: A turret with an automatic fire system.
   suffix: DS, Death Squad, Эскадрон Смерти
   components:
   - type: NpcFactionMember

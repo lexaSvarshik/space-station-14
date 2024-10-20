@@ -54,8 +54,8 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitDeathsquadCommander
-  name: шлем командира ЭС
-  description: Шлем от костюм командира ЭС.
+  name: the helmet of the commander of the DQ
+  description: The helmet from the Death Squad commander's costume.
   components:
   - type: BreathMask
   - type: Sprite
@@ -81,8 +81,8 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitDeathsquadAlpha
-  name: шлем специалиста ЭС
-  description: Шлем от скафандра специалиста ЭС
+  name: the helmet of the specialist of the DQ
+  description: The helmet from the Death Squad specialist's costume.
   components:
   - type: BreathMask
   - type: Sprite
@@ -103,7 +103,7 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
-        
+
 #SuperMatter operator's Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
@@ -121,4 +121,4 @@
     radius: 6
   - type: PressureProtection
     highPressureMultiplier: 0.32
-    lowPressureMultiplier: 
+    lowPressureMultiplier:

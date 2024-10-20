@@ -1,9 +1,9 @@
 - type: entity
   parent: ChemicalMedipen
   id: EmergencyMedipenDQ
-  name: божественный медипен
-  description: Экстренный медипен, который в кратчайшие сроки ставит на ноги даже при самых тяжелых травмах. Из-за дороговизны и трудности производства применяется элитными отрядами.
-  suffix: Shitspawn, Death Squad, Эскадрон Смерти
+  name: holymoly medicine
+  description: Emergency honey and foam, which puts you back on your feet in the shortest possible time, even with the most severe injuries. Due to the high cost and difficulty of production, it is used by elite units.
+  suffix: Shitspawn, Death Squad
   components:
   - type: SolutionContainerManager
     solutions:

@@ -69,8 +69,8 @@
 - type: entity
   parent: [ClothingShoesBootsMagBase, BaseJetpack]
   id: ClothingShoesBootsMagDQ
-  name: магнитные ботинки Эскадрона Смерти
-  description: Самые современные магнитные ботинки в узнаваемых цветах.
+  name: Death Squad Magnetic Boots
+  description: The most modern magnetic shoes in recognizable colors.
   components:
   - type: Sprite
     sprite: SS220/Clothing/Shoes/Boots/dq_magboots.rsi

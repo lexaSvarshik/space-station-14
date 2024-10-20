@@ -13,3 +13,6 @@ job-name-ert-chaplain = священник ОБР
 job-name-nt-admiral = адмирал NanoTrasen
 job-name-nt-politician = дипломат NanoTrasen
 job-name-ussp = СССП
+
+job-name-dq-сommander = командир Эксадрона Смерти
+job-name-dq-specialist = специалист Эксадрона Смерти

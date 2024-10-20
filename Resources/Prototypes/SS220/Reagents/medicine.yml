@@ -162,9 +162,9 @@
 
 - type: reagent
   id: HolyMolyWater
-  name: эссенция святой воды
+  name: the essence of holy water
   group: Medicine
-  desc: Концентрированная святая вода, лечащая все болезни и даже смерть.
+  desc: Concentrated holy water that cures all diseases and even death.
   physicalDesc: невозможное
   flavor: HolyMoly
   color: "#e8e8e8"

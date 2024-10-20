@@ -70,8 +70,8 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesDQ
-  name: боевые перчатки ЭС
-  description: Силовые перчатки, многократно усиливающие механическую силу удара.
+  name: DQ combat gloves
+  description: Power gloves that multiply the mechanical force of impact.
   components:
   - type: Insulated
   - type: Sprite

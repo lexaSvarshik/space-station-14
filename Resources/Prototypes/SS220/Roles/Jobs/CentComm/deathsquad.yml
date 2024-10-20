@@ -1,6 +1,6 @@
 - type: job
   id: DeathsquadCommander
-  name: командир Эскадрона Смерти
+  name: job-name-dq-сommander
   description: job-description-deathsquad
   playTimeTracker: JobDeathSquadCommander
   setPreference: false
@@ -15,7 +15,7 @@
 
 - type: job
   id: DeathsquadHealer
-  name: специалист Эскадрона Смерти
+  name: job-name-dq-specialist
   description: job-description-deathsquad
   playTimeTracker: JobDeathSquadHealer
   setPreference: false

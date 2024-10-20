@@ -172,11 +172,12 @@
     color: blue
     energy: 0.5
 
+# Death Squad
 - type: hitscan
   id: Pulsekill
   damage:
     types:
-      Heat: 20
+      Heat: 30
       Structural: 200
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -192,7 +193,7 @@
   id: PulseDESTROY
   damage:
     types:
-      Heat: 50
+      Heat: 60
       Structural: 600
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi

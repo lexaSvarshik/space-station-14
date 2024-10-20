@@ -47,7 +47,7 @@
   description: A graceful and elegant weapon that is the perfect choice for those who prefer a sophisticated style during combat.
   suffix: 27 piercing
   components:
-  - type: EmitSoundOnLand ##new sound_drop effect, add MIXnikita 
+  - type: EmitSoundOnLand ##new sound_drop effect, add MIXnikita
     sound:
       path: /Audio/SS220/Effects/Drop/cane_blade.ogg
       params:
@@ -111,9 +111,9 @@
 - type: entity
   parent: BaseItem
   id: Chainsword #todo Хуйня, переделать.
-  name: цепной меч
-  description: Технологии и ультранасилие в одном флаконе!
-  suffix: Death Squad, Эскадрон Смерти
+  name: chainsword
+  description: Technology and ultra-violence in one bottle!
+  suffix: Death Squad
   components:
   - type: EmitSoundOnLand
     sound:
