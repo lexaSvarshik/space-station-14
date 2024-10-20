@@ -162,8 +162,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Эскадрон Смерти
-    fullName: Оперативник
+    jobTitle: job-name-deathsquad
   - type: Access
     groups:
     - AllAccess

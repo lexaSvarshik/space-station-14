@@ -14,5 +14,6 @@ job-name-nt-admiral = адмирал NanoTrasen
 job-name-nt-politician = дипломат NanoTrasen
 job-name-ussp = СССП
 
+job-name-deathsquad = оперативник Эскадрона Смерти
 job-name-dq-commander = командир Эскадрона Смерти
 job-name-dq-specialist = специалист Эскадрона Смерти
