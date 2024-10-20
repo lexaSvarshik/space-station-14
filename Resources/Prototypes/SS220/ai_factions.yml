@@ -59,6 +59,7 @@
 # Death Squad
 - type: npcFaction
   id: DeathSquad
+  hostile:
   - NanoTrasen
   - Syndicate
   - Xeno
