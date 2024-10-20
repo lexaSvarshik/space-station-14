@@ -241,6 +241,7 @@
         Heat: -14
         Radiation: 4
         Poison: -8
+        Asphyxiation: -50
   - type: ProjectileSpread
     proto: BulletLaserHeal
     count: 3

@@ -28,7 +28,7 @@
     - id: ClothingHeadsetAltCentComm
     - id: WeaponRifleSP
     - id: Chainsword
-    - id: ClothingOuterHardsuitDeathsquadCommand
+    - id: ClothingOuterHardsuitDeathsquadCommander
     - id: ClothingBackpackDeathSquadOperativeFilled
 
 - type: entity
