@@ -1,6 +1,6 @@
 ent-ClothingBackpackDeathSquadOperativeFilled = { ent-ClothingBackpackDeathSquadFilled }
     .desc = { ent-ClothingBackpackDeathSquadFilled.desc }
-    .suffix = Рюкзак оперативника ЭС, Эскадрон Смерти, Death Squad, ЭС, DQ
+    .suffix = Оперативник, Эскадрон Смерти, dq
 ent-ClothingBackpackDeathSquadSpecialistFilled =  { ent-ClothingBackpackDeathSquadFilled }
     .desc = { ent-ClothingBackpackDeathSquadFilled.desc }
-    .suffix = Рюкзак специалиста ЭС, Эскадрон Смерти, Death Squad, ЭС, DQ
+    .suffix = Специалист, Эскадрон Смерти, dq
