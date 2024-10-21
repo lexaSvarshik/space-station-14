@@ -162,7 +162,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: job-name-deathsquad
+    jobTitle: job-name-dq-operative
   - type: Access
     groups:
     - AllAccess

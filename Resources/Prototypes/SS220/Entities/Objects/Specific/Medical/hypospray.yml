@@ -2,7 +2,7 @@
   parent: ChemicalMedipen
   id: EmergencyMedipenDQ
   name: holymoly medicine
-  description: Emergency honey and foam, which puts you back on your feet in the shortest possible time, even with the most severe injuries. Due to the high cost and difficulty of production, it is used by elite units.
+  description: Emergency medipen, which puts you back on your feet in the shortest possible time, even with the most severe injuries. Due to the high cost and difficulty of production, it is used only by the most elite units.
   suffix: Shitspawn, Death Squad
   components:
   - type: SolutionContainerManager

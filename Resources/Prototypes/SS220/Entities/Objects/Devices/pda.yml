@@ -54,7 +54,6 @@
       visible: false #SS220 PDA-Resprite-End
   - type: Icon
     state: pda-seniorservice
- 
 - type: entity
   parent: BasePDA
   id: MagistratePDA
