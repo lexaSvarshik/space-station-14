@@ -68,7 +68,7 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitDeathsquadCommander
-  name: the hardsuit of the commander of the DQ
+  name: the hardsuit of the DQ commander
   description: A high-tech hardsuit designed for the squad commander.
   components:
   - type: Sprite
