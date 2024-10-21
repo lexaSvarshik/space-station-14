@@ -4,7 +4,7 @@
   name: pulse rifle
   parent: BaseWeaponBattery
   id: WeaponPulseRifle2
-  description: A heavy-duty energy rifle capable of destroying structures.
+  description: A heavy-duty energy rifle capable of annihilating any structures.
   suffix: Винтовка, Death Squad
   components:
   - type: Sprite
