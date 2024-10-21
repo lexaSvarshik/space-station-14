@@ -39,7 +39,7 @@
   name: pulse shotgun
   parent: BaseWeaponBattery
   id: WeaponPulseShotgun
-  description: An energy shotgun with the latest treatment technique.
+  description: An energy shotgun with the latest treatment technology.
   suffix: Death Squad
   components:
   - type: Sprite
