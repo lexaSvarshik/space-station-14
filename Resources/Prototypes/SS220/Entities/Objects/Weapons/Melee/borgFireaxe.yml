@@ -21,8 +21,8 @@
       types:
         # axes are kinda like sharp hammers, you know?
         Blunt: 5
-        Slash: 20
-        Structural: 170 #ss220
+        Slash: 10
+        Structural: 90 #ss220
     soundHit:
       collection: MetalThud
   - type: Item
