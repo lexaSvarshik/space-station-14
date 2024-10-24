@@ -1,4 +1,4 @@
-ent-WeaponPulseRifle2 = пульсовая винтовака
+ent-WeaponPulseRifle2 = пульсовая винтовка
     .suffix = Винтовка, Эскадрон Смерти, Death Squad, ЭС, DQ
     .desc = Энергетическая винтовка тяжелого типа, способна аннигилировать любые структуры.
 ent-WeaponPulseShotgun = пульсовый дробовик
