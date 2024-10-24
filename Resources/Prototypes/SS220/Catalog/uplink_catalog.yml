@@ -178,6 +178,8 @@
   discountDownTo:
     Telecrystal: 1
   cost:
+    Telecrystal: 2
+  cost:
     Telecrystal: 3
   categories:
   - UplinkDisruption
