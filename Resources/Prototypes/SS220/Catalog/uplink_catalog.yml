@@ -176,8 +176,6 @@
   productEntity: BorgModuleFlamingAxe
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 1
-  cost:
     Telecrystal: 2
   cost:
     Telecrystal: 3
