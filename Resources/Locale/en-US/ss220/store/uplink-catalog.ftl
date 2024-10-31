@@ -9,3 +9,6 @@ uplink-helmet-swat-syndicate-desc = An extremely robust helmet, commonly used by
 
 uplink-borg-module-axe-name = Modified fire axe cyborg module
 uplink-borg-module-axe-desc = A versatile module that gives cyborgs a modified fire axe that sets victims on fire when hit
+
+uplink-silent-shoes-name = Silent shoes
+uplink-silent-shoes-desc = Completely silent shoes used on Syndicate spy missions.

@@ -37,3 +37,6 @@ uplink-helmet-swat-syndicate-desc = Очень прочный шлем, обыч
 
 uplink-borg-module-axe-name = Модуль киборга с огнетопором
 uplink-borg-module-axe-desc = Универсальный модуль, дающий киборгам модифицированный пожарный топор, поджигающий жертв при ударе
+
+uplink-silent-shoes-name = Бесшумные ботинки
+uplink-silent-shoes-desc = Совершенно бесшумные ботинки, используемые на шпионских миссиях Синдиката.
