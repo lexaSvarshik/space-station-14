@@ -298,22 +298,7 @@
   - type: Sprite
   #ss220 cmo hardsuit resprite begin
     sprite: SS220/Clothing/Head/Hardsuits/medical.rsi
-    layers:
-    - state: icon
-    - state: icon-flash
-      visible: false
-      map: [ "light" ]
-  - type: HandheldLight
-    addPrefix: false
-  - type: ToggleableLightVisuals
-    spriteLayer: light
-    clothingVisuals:
-      head:
-      - state: equipped-head-light
   - type: Clothing
-    clothingVisuals:
-      head:
-      - state: equipped-head
     sprite: SS220/Clothing/Head/Hardsuits/medical.rsi
   #ss220 cmo hardsuit resprite end
   - type: PointLight
