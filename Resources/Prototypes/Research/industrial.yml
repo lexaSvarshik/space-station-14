@@ -12,8 +12,6 @@
   recipeUnlocks:
   - MiningDrill
   - MineralScannerEmpty
-  - BorgModuleMining
-  - BorgModuleGrapplingGun
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingEyesHudSupply #ss220 HUD CARGO ADD
@@ -170,11 +168,10 @@
     - PowerDrill
     - JawsOfLife
     - BorgModuleAdvancedTool
-    - BorgModuleRCD
     - BorgModuleProtoKineticAccelerator # ss220
     - BorgModuleFireAxe #SS220 Borg Modules
-# ss220 start thermoelectric generator
 
+# ss220 start thermoelectric generator
 - type: technology
   id: RenewablePower
   name: research-technology-renewable-power
