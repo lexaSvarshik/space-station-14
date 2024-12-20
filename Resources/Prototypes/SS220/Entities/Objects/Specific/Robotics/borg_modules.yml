@@ -28,6 +28,8 @@
     - type: ItemBorgModule
       items:
         - BorgFireAxe
+    - type: BorgModuleIcon
+      icon: { sprite: Interface/Actions/actions_borg.rsi, state: fireaxe-module }
 
 - type: entity
   id: BorgModuleFlamingAxe
@@ -42,3 +44,5 @@
     - type: ItemBorgModule
       items:
         - BorgFireAxeFlaming
+    - type: BorgModuleIcon
+      icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
