@@ -25,24 +25,39 @@
       layers:
         - state: engineering
         - state: icon-fireaxe
+          sprite: SS220/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       items:
         - BorgFireAxe
     - type: BorgModuleIcon
-      icon: { sprite: Interface/Actions/actions_borg.rsi, state: fireaxe-module }
+      icon: { sprite: SS220/Interface/Actions/actions_borg.rsi, state: fireaxe-module }
 
 - type: entity
   id: BorgModuleFlamingAxe
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: modified fire axe cyborg module
-  description: A piece of tech that gives cyborgs a fire axe that sets victims on fire!
+  name: fire axe cyborg module
+  description: A piece of tech that gives cyborgs a fire axe!
   components:
     - type: Sprite
       layers:
-        - state: syndicate
-        - state: icon-fireaxe-flaming
+      - state: syndicate
+      - state: icon-fireaxe-flaming
+        sprite: SS220/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       items:
         - BorgFireAxeFlaming
     - type: BorgModuleIcon
-      icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
+      icon: { sprite: SS220/Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
+    - type: HiddenDescription
+      entries:
+      - label: hidden-desc-flaming-axe-module-syndicate
+        whitelistMind:
+          components:
+            - TraitorRole
+            - NukeOperative
+      - label: hidden-desc-flaming-axe-module-research
+        jobRequired:
+          - ResearchAssistant
+          - ResearchDirector
+          - Scientist
+          - Borg
