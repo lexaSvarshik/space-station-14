@@ -557,6 +557,7 @@
     sprite: SS220/Clothing/Head/Hats/ysatyu.rsi
 
 - type: entity
+  parent: ClothingHeadBase
   id: ClothingSFlowerhead
   name: венок из космических ромашек
   description: Лёгкий и нежный цветочный оберег.
