@@ -64,16 +64,6 @@
       - id: MagazinePistolSubMachineGun
       - id: MagazinePistolSubMachineGun
 
-- type: entity
-  parent: ClothingBackpack
-  id: ClothingBackpackWhiteCaptain
-  name: белый рюкзак капитана
-  description: Дорогая белая сумка, выданная за выслугу лет капитану.
-  suffix: За время в игре
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Back/Backpacks/whitecapbackpack.rsi
-
   # Офицер "Синий Щит"
 - type: entity
   parent: ClothingBackpackSatchel
