@@ -386,112 +386,6 @@
     - HamsterWearable
     - WhitelistChameleon
 
-  # Шеф-повар
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatChefWhite
-  name: белый поварской колпак
-  description: Это колпак, который повара используют, чтобы волосы не попадали в еду. Судя по еде, они не работают.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_white.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_white.rsi
-  - type: Storage
-    grid:
-    - 0,0,0,0
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-  - type: Tag
-    tags:
-    - ClothMade
-    - HamsterWearable
-    - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatChefGreen
-  name: зелёный поварской колпак
-  description: Это колпак, который повара используют, чтобы волосы не попадали в еду. Судя по еде, они не работают.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_green.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_green.rsi
-  - type: Storage
-    grid:
-    - 0,0,0,0
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-  - type: Tag
-    tags:
-    - ClothMade
-    - HamsterWearable
-    - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatChefBlack
-  name: чёрный поварской колпак
-  description: Это колпак, который повара используют, чтобы волосы не попадали в еду. Судя по еде, они не работают.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_black.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_black.rsi
-  - type: Storage
-    grid:
-    - 0,0,0,0
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-  - type: Tag
-    tags:
-    - ClothMade
-    - HamsterWearable
-    - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatChefNanotrasen
-  name: синий поварской колпак
-  description: Владелец этого колпака точно не допустит, чтобы его волосы попали в чужую еду. Судя по еде, так и есть.
-  suffix: Не маппить, Сеньор
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_nt.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/Chef/chef_nt.rsi
-  - type: Storage
-    grid:
-    - 0,0,0,0
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-  - type: Tag
-    tags:
-    - ClothMade
-    - HamsterWearable
-    - WhitelistChameleon
-
   # Уборщик
 - type: entity
   parent: ClothingHeadBase
@@ -515,13 +409,12 @@
   id: ClothingHeadHatBeretBard #SS220 bard loadout
   name: beret with feather
   description: Will add atmosphere!
+  suffix: For playtime
   components:
   - type: Sprite
     sprite: SS220/Clothing/Head/Hats/beret_bard.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hats/beret_bard.rsi
-
-
 
 # Служба безопасности
 
@@ -608,19 +501,6 @@
     - type: Clothing
       sprite: SS220/Clothing/Head/Hats/beret_salvage_specialist.rsi
 
-# Инженерный
-  # Старший инженер
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadTiaraDruid #SS220 druid loadout
-  name: druid tiara
-  description: A symbol of harmony with nature, even among the stars and planets.
-  suffix: For playtime
-  components:
-    - type: Sprite
-      sprite: SS220/Clothing/Head/Hats/druid_tiara.rsi
-    - type: Clothing
-
 # Инженерия
 
   # Старший инженер
@@ -689,23 +569,6 @@
     sprite: SS220/Clothing/Head/Hats/ysatyu.rsi
 
 - type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatSeniorService
-  name: фуражка ведущего сервисного отдела
-  description: Большая, стильная голова
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/seniorsercap.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/seniorsercap.rsi
-  - type: Tag
-    tags:
-    - ClothMade
-    - Ian # SS220 Shapochki
-    - HamsterWearable
-    - WhitelistChameleon
-
-- type: entity
   id: ClothingSFlowerhead
   name: венок из космических ромашек
   description: Лёгкий и нежный цветочный оберег.
@@ -731,18 +594,6 @@
   - type: Construction
     graph: Clothingwsflowerhead
     node: ClothingWSFlowerhead
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeretBard #SS220 bard loadout
-  name: beret with feather
-  description: Will add atmosphere!
-  suffix: For playtime
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/beret_bard.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/beret_bard.rsi
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
