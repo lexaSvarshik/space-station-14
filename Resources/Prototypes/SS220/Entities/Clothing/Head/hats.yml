@@ -528,7 +528,6 @@
       Female: FemaleEngineer
       Unsexed: MaleEngineer
 
-
 # OTHER
 
 - type: entity
@@ -545,17 +544,6 @@
     tags:
      - WhitelistChameleon
      - MagicianHat
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatMoryak
-  name: moryak beret
-  description: Beret with a orange tampon.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/moryak.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/moryak.rsi
 
 - type: entity
   parent: ClothingHeadBase
