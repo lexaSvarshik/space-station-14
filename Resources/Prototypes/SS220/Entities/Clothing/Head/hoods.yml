@@ -1,25 +1,6 @@
 # © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
 
 - type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatHoodChaplainHoodWhite
-  categories: [ HideSpawnMenu ]
-  name: chaplain's white hood
-  description: Maximum piety in this star system.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hoods/chaplainwhite.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hoods/chaplainwhite.rsi
-  - type: Tag
-    tags:
-    - HamsterWearable
-    - WhitelistChameleon
-  - type: HideLayerClothing
-    slots:
-    - Hair
-
-- type: entity
   parent: ClothingHeadHatHoodWinterBase
   id: ClothingHeadHatHoodWinterCentcomm
   categories: [ HideSpawnMenu ]
@@ -30,17 +11,6 @@
     sprite: SS220/Clothing/Head/Hoods/Coat/hoodcentcom.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hoods/Coat/hoodcentcom.rsi
-
-- type: entity
-  parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatHoodHeartFinaly
-  name: сердечный капюшон
-  description: Капюшон.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/HeartHood.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/HeartHood.rsi
 
 #Экзокостюм утилизаторов - капюшон
 - type: entity
@@ -63,17 +33,6 @@
   - type: Tag
     tags:
     - HidesHair
-
-- type: entity
-  parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatFloppa # не уверен что не спонсорское, проверить
-  name: шлёпафон
-  description: Шлёпашон
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
 
 - type: entity
   parent: ClothingHeadHatHoodBioGeneral

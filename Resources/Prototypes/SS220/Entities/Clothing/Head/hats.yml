@@ -595,17 +595,6 @@
     graph: Clothingwsflowerhead
     node: ClothingWSFlowerhead
 
-- type: entity
-  parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatFloppa
-  name: шлёпафон
-  description: Шлёпашон
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/FloppaHat.rsi
-
 # WMT Ebent begin
 - type: entity
   parent: ClothingHeadBase
