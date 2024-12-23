@@ -30,24 +30,6 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakFieldOfficerCentComm
-  name: плащ Полевого Офицера Центрального Командования
-  description: От этого плаща так и веет властью и вашим увольнением.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Neck/Cloaks/centcomm_fo.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckCloakWhiteCapFormal
-  name: белый формальный плащ капитана
-  description: Роскошный плащ почётного ветерана за выслугу лет.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Neck/Cloaks/whitecapcloakformal.rsi
-
-- type: entity
-  parent: ClothingNeckBase
   id: ClothingCloakBlueShield
   name: плащ Синего Щита
   description: Используется офицером «Синий Щит», который верно защищает своих глав.
