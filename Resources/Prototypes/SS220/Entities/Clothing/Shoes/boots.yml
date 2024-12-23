@@ -2,15 +2,6 @@
 
 # secboots
 - type: entity
-  parent: ClothingShoesBootsJackSec
-  id: ClothingShoesBootsJackSecFilled
-  components:
-  - type: ContainerFill
-    containers:
-     item:
-      - CombatKnife
-
-- type: entity
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinterSecMed
   name: зимние ботинки бригмедика
