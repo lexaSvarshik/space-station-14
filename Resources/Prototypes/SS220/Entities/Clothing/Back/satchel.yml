@@ -39,15 +39,6 @@
         - id: RubberStampDenied
 
 - type: entity
-  parent: ClothingBackpackSatchel
-  id: ClothingBackpackWhiteSatchelCaptain
-  name: белая сумка капитана
-  description: Дорогая белая сумка, выданная за выслугу лет капитану.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Back/Satchels/whitecapsatchel.rsi
-
-- type: entity
   parent: ClothingBackpack
   id: ClothingBackSatchelSRT
   name: сумка ГСН
@@ -74,10 +65,6 @@
       - id: MagazinePistolSubMachineGun
 
 - type: entity
-  parent: ClothingBackpackSatchel
-  id: ClothingBackpackNoirSatchel
-  name: нуарная кожаная сумка
-  description: Модная сумка в нуарном стиле, ушедшая из нашей эпохи.
   parent: ClothingBackpack
   id: ClothingBackpackWhiteCaptain
   name: белый рюкзак капитана
