@@ -778,18 +778,6 @@
 
 # Other
 
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitMPolice
-  name: Militar Police suit
-  description: few people will want to resist you.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/mpolice.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/mpolice.rsi
-
-
 # WMT Ebent start
 - type: entity
   parent: ClothingUniformBase
