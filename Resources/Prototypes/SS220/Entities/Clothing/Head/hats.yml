@@ -547,17 +547,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadYsatyu
-  name: ysatyu cap
-  description: Moonshine craftsman's cap.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Head/Hats/ysatyu.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Head/Hats/ysatyu.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: ClothingSFlowerhead
   name: венок из космических ромашек
   description: Лёгкий и нежный цветочный оберег.

@@ -806,17 +806,6 @@
 
 # конец красивой сортировки
 
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitYsatyu
-  name: ysatyu suit
-  description: It smells like moonshine.
-  components:
-  - type: Sprite
-    sprite: SS220/Clothing/Uniforms/ysatyu.rsi
-  - type: Clothing
-    sprite: SS220/Clothing/Uniforms/ysatyu.rsi
-
 #Military Police suits by MIXnikita for SS200
 - type: entity
   parent: ClothingUniformBase
