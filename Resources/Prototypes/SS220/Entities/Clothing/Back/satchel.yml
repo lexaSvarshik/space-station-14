@@ -51,7 +51,6 @@
     - 0,0,6,3
 
 - type: entity
-  noSpawn: false
   parent: ClothingBackSatchelSRT
   id: ClothingBackSatchelSRTFilled
   suffix: Заполненный

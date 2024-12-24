@@ -251,7 +251,6 @@
   - type: Appearance
 
 - type: entity
-  noSpawn: false
   parent: ClothingBeltStorageBase
   id: ClothingBeltWebbingSRT
   name: пояс ГСН
