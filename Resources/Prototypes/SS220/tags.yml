@@ -188,3 +188,11 @@
 
 - type: Tag
   id: ToyEnergySword
+
+# SS220 Cult
+- type: Tag
+  id: Omnivorous
+
+# debug-uplink-fix
+- type: Tag
+  id: DebugUplink
