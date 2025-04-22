@@ -6,7 +6,7 @@
   suffix: Ebent, Shitspawn, FractWar
   components:
   - type: Sprite
-    sprite: SS220/Objects/Weapons/Guns/ert_blaster.rsi
+    sprite: SS220/Shitspawn/FractWarEbent/Objects/Weapons/Guns/Battery/ert_blaster.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -16,7 +16,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: SS220/Objects/Weapons/Guns/ert_blaster.rsi
+    sprite: SS220/Shitspawn/FractWarEbent/Objects/Weapons/Guns/Battery/ert_blaster.rsi
     quickEquip: false
     slots:
     - Back
@@ -27,12 +27,12 @@
     zeroVisible: true
   - type: Wieldable
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -16
+    minAngle: -2
+    maxAngle: -13
   - type: Gun
-    fireRate: 7
-    minAngle: 21
-    maxAngle: 32
+    fireRate: 6.5
+    minAngle: 17
+    maxAngle: 29
     angleIncrease: 3
     angleDecay: 16
     selectedMode: FullAuto
@@ -48,6 +48,7 @@
         startingItem: BlasterPowerCell
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 1
         whitelist:
           tags:
             - BlasterPowerCell

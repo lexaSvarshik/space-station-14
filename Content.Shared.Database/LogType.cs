@@ -415,7 +415,7 @@ public enum LogType
     /// A player had a refund at the "store".
     /// </summary>
     StoreRefund = 93,
-    
+
     CryoStorage = 94, // 220 Cryo-Storage
 
     /// <summary>
@@ -445,4 +445,24 @@ public enum LogType
     /// A ghost warped to an entity through the ghost warp menu.
     /// </summary>
     GhostWarp = 99,
+
+    /// <summary>
+    /// A player interacted with a PDA or its cartridge component
+    /// </summary>
+    PdaInteract = 100,
+
+    /// <summary>
+    /// An atmos networked device (such as a vent or pump) has had its settings changed, usually through an air alarm
+    /// </summary>
+    AtmosDeviceSetting = 101,
+
+
+    //SS220 log types start
+
+    /// <summary>
+    /// Admin command executed.
+    /// </summary>
+    AdminCommand = 10000,
+
+    //SS220 log types end
 }

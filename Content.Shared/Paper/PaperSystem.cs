@@ -10,6 +10,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Audio.Systems;
 using static Content.Shared.Paper.PaperComponent;
 using Content.Shared.SS220.Paper;
+using Content.Shared.SS220.Language.Systems;
 
 namespace Content.Shared.Paper;
 
@@ -23,9 +24,8 @@ public sealed class PaperSystem : EntitySystem
     [Dependency] private readonly SharedUserInterfaceSystem _uiSystem = default!;
     [Dependency] private readonly MetaDataSystem _metaSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-
-    //SS220 Add auto form
-    [Dependency] private readonly PaperAutoFormSystem _paperAutoFormSystem = default!;
+    [Dependency] private readonly SharedDocumentHelperSystem _documentHelper = default!;
+    [Dependency] private readonly SharedLanguageSystem _languageSystem = default!;
 
     public override void Initialize()
     {
@@ -68,11 +68,6 @@ public sealed class PaperSystem : EntitySystem
     {
         entity.Comp.Mode = PaperAction.Read;
         UpdateUserInterface(entity);
-
-        //SS220 Add auto form begin
-        entity.Comp.Writer = null;
-        Dirty(entity.Owner, entity.Comp);
-        //SS220 Add auto form end
     }
 
     private void OnExamined(Entity<PaperComponent> entity, ref ExaminedEvent args)
@@ -110,27 +105,26 @@ public sealed class PaperSystem : EntitySystem
     {
         // only allow editing if there are no stamps or when using a cyberpen
         var editable = entity.Comp.StampedBy.Count == 0 || _tagSystem.HasTag(args.Used, "WriteIgnoreStamps") && entity.Comp.Writable; //SS220-upstream-merge
-        if (_tagSystem.HasTag(args.Used, "Write") && editable)
+        if (_tagSystem.HasTag(args.Used, "Write"))
         {
-            if (entity.Comp.EditingDisabled)
+            if (editable)
             {
-                var paperEditingDisabledMessage = Loc.GetString("paper-tamper-proof-modified-message");
-                _popupSystem.PopupEntity(paperEditingDisabledMessage, entity, args.User);
+                if (entity.Comp.EditingDisabled)
+                {
+                    var paperEditingDisabledMessage = Loc.GetString("paper-tamper-proof-modified-message");
+                    _popupSystem.PopupEntity(paperEditingDisabledMessage, entity, args.User);
 
-                args.Handled = true;
-                return;
+                    args.Handled = true;
+                    return;
+                }
+                var writeEvent = new PaperWriteEvent(entity, args.User);
+                RaiseLocalEvent(args.Used, ref writeEvent);
+
+                entity.Comp.Mode = PaperAction.Write;
+                _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
+                UpdateUserInterface(entity);
+                _documentHelper.UpdateUserInterface(entity, args.User); // SS220 Document Helper
             }
-            var writeEvent = new PaperWriteEvent(entity, args.User);
-            RaiseLocalEvent(args.Used, ref writeEvent);
-
-            entity.Comp.Mode = PaperAction.Write;
-            _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
-            UpdateUserInterface(entity);
-
-            //SS220 Add auto form begin
-            entity.Comp.Writer = args.User;
-            Dirty(entity.Owner, entity.Comp);
-            //SS220 Add auto form end
 
             args.Handled = true;
             return;
@@ -154,11 +148,6 @@ public sealed class PaperSystem : EntitySystem
             _audio.PlayPredicted(stampComp.Sound, entity, args.User);
 
             UpdateUserInterface(entity);
-
-            //SS220 Add auto form begin
-            entity.Comp.Writer = null;
-            Dirty(entity.Owner, entity.Comp);
-            //SS220 Add auto form end
         }
     }
 
@@ -175,7 +164,7 @@ public sealed class PaperSystem : EntitySystem
     {
         if (args.Text.Length <= entity.Comp.ContentSize)
         {
-            SetContent(entity, args.Text);
+            SetContent(entity, args.Text, args.Actor /* SS220 languages */);
 
             if (TryComp<AppearanceComponent>(entity, out var appearance))
                 _appearance.SetData(entity, PaperVisuals.Status, PaperStatus.Written, appearance);
@@ -192,11 +181,6 @@ public sealed class PaperSystem : EntitySystem
 
         entity.Comp.Mode = PaperAction.Read;
         UpdateUserInterface(entity);
-
-        //SS220 Add auto form begin
-        entity.Comp.Writer = null;
-        Dirty(entity.Owner, entity.Comp);
-        //SS220 Add auto form end
     }
 
     private void OnPaperWrite(Entity<ActivateOnPaperOpenedComponent> entity, ref PaperWriteEvent args)
@@ -224,10 +208,17 @@ public sealed class PaperSystem : EntitySystem
         return true;
     }
 
-    public void SetContent(Entity<PaperComponent> entity, string content)
+    public void SetContent(Entity<PaperComponent> entity, string content, EntityUid? writer = null /* SS220 languages */)
     {
-        var formed = _paperAutoFormSystem.ReplaceKeyWords(entity, content); //SS220 Add auto form begin
-        entity.Comp.Content = formed + '\n';  //SS220 Add auto form end
+        // SS220 Add document tags begin
+        var ev = new PaperSetContentAttemptEvent(entity, content, writer);
+        RaiseLocalEvent(entity, ref ev, true);
+        if (ev.Cancelled)
+            return;
+
+        content = ev.TransformedContent;
+        entity.Comp.Content = content;
+        // SS220 Add document tags end
         Dirty(entity);
         UpdateUserInterface(entity);
 
@@ -252,3 +243,14 @@ public sealed class PaperSystem : EntitySystem
 /// </summary>
 [ByRefEvent]
 public record struct PaperWriteEvent(EntityUid User, EntityUid Paper);
+
+// SS220 languages begin
+[ByRefEvent]
+public sealed class PaperSetContentAttemptEvent(Entity<PaperComponent> paper, string newContent, EntityUid? writer = null) : CancellableEntityEventArgs()
+{
+    public readonly Entity<PaperComponent> Paper = paper;
+    public readonly EntityUid? Writer = writer;
+    public readonly string NewContent = newContent;
+    public string TransformedContent = newContent;
+}
+// SS220 languages end

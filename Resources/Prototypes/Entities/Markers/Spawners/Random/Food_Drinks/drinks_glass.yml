@@ -59,7 +59,7 @@
       - DrinkIcedBeerGlass
       - DrinkIceCreamGlass
       - IrishBoolGlass
-      - DrinkIrishCarBomb
+      - DrinkIrishSlammer
       - DrinkIrishCoffeeGlass
       - DrinkLemonadeGlass
       - DrinkKiraSpecial
@@ -109,6 +109,7 @@
       - DrinkMoonshineGlass
       - DrinkHotArachneGlass #SS220 HotArachne cocktail
       - DrinkFrench75Glass #SS220 French 75 cocktail
+      - DrinkXlebnuldieselGlass #SS220 Xlebnuldiesel
     chance: 0.8
     offset: 0.0
     #rare
@@ -126,4 +127,5 @@
       - DrinkShakeRobo
       - DrinkHoochGlass
       - DrinkBeepskySmashGlass
+      - DrinkBacchusGlass #SS220 Bacchus' Blessing
     rareChance: 0.05
