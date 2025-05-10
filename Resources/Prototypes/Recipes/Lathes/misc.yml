@@ -209,6 +209,11 @@
   id: TileGreenCircuit
   result: FloorTileItemGCircuit
   completetime: 1
+  materials:
+    Steel: 25
+    Plastic: 25
+    Gold: 25
+    Silver: 25
 
 - type: latheRecipe
   parent: BaseFauxTileRecipe

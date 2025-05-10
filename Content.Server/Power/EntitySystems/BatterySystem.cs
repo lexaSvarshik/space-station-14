@@ -211,11 +211,11 @@ namespace Content.Server.Power.EntitySystems
             float newValue;
             if (!battery.IsOvercharged)
             {
-                newValue = Math.Clamp(0, battery.CurrentCharge - value, battery.MaxCharge);
+                newValue = Math.Clamp(0, battery.CurrentCharge + value, battery.MaxCharge);
             }
             else
             {
-                newValue = battery.CurrentCharge - value < 0 ? 0 : battery.CurrentCharge - value;
+                newValue = battery.CurrentCharge + value < 0 ? 0 : battery.CurrentCharge - value;
 
                 if (newValue <= battery.MaxCharge)
                     battery.IsOvercharged = false;
