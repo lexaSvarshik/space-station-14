@@ -146,6 +146,8 @@
   id: MessengerServer
   name: device-frequency-prototype-name-msg-server
   frequency: 2204
+
+- type: deviceFrequency
   id: Xenoborg
   name: device-frequency-prototype-name-xenoborg
   frequency: 2004

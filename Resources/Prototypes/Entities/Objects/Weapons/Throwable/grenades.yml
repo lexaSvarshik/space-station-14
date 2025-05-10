@@ -549,8 +549,6 @@
       params:
         volume: 12
   #ss220 toys begin #it will explode like a real one, but zero damage :jokerge:
-  - type: OnUseTimerTrigger
-    delay: 5
   - type: Explosive
     explosionType: Minibomb
     totalIntensity: 0.1

@@ -1132,6 +1132,7 @@
   - type: Sprite
     layers:
     - state: orange
+    - state: idprisoner # Port SS220-prisoner-id
   - type: Item
     heldPrefix: orange
   - type: Access
@@ -1148,6 +1149,8 @@
     - GenpopLeave
   - type: Speech
     speechVerb: Robotic
+  - type: TTS
+    voice: sentrybot
   - type: Tag
     tags:
     - DoorBumpOpener
