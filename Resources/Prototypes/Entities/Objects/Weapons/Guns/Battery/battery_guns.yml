@@ -754,6 +754,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/chimp.rsi
   - type: Gun
+    canSuicide: false # SS220-new-feature kus
     projectileSpeed: 10
     fireRate: 1.5
     soundGunshot:
@@ -808,6 +809,7 @@
     - state: base
       map: ["enum.GunVisualLayers.Base"]
   - type: Gun
+    canSuicide: false #SS220-new-feature kus
     fireRate: 1
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_clown.ogg
