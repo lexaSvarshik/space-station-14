@@ -82,9 +82,6 @@
   startNode: start
   targetNode: woodWall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/wood.rsi #SS220-Walls-Sprite-Update
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -98,9 +95,6 @@
   startNode: start
   targetNode: uraniumWall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/uranium.rsi # SS220 Uranuim Wall Resprite
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -153,9 +147,6 @@
   startNode: start
   targetNode: goldWall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/gold.rsi #SS220-Walss-Sprite-Update-V4
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -169,9 +160,6 @@
   startNode: start
   targetNode: shuttleWall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/shuttle.rsi #ss220-walls-update
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -185,9 +173,6 @@
   startNode: start
   targetNode: diagonalshuttleWall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/shuttle_diagonal.rsi #ss220-walls-update
-    state: state0
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: true
@@ -349,9 +334,6 @@
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
-  icon:
-    sprite: SS220/Structures/Windows/clockwork_window.rsi #SS220-Walls-Sprite-Update-V3
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -407,9 +389,6 @@
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
-  icon:
-    sprite: SS220/Structures/Windows/shuttle_window.rsi #ss220-walls-update
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
@@ -1267,7 +1246,7 @@
   description: recipes-secret-door-desc
   graph: Girder # SS220 Graph changed (SecretSolidDoor Recipe Update)
   startNode: start
-  targetNode: solidSecretDoor
+  targetNode: secretWall # SS220 Graph changed (SecretSolidDoor Recipe Update)
   category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
@@ -1277,56 +1256,41 @@
 
 #SS220-craft-start
 - type: construction
-  name: diagonal shuttle window
   id: ShuttleWindowDiagonal
   graph: WindowDiagonal
   startNode: start
   targetNode: shuttleWindowDiagonal
   category: construction-category-structures
-  description: Extra sturdy to resist the pressure of FTL or sustain damage from munitions.
   canBuildInImpassable: true
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/shuttle_window_diagonal.rsi
-    state: state1
   objectType: Structure
   placementMode: SnapgridCenter
 
 - type: construction
-  name: directional uranium window
   id: UraniumWindowDirectional
   graph: WindowDirectional
   startNode: start
   targetNode: uraniumWindowDirectional
   category: construction-category-structures
-  description: Clear.
   canBuildInImpassable: true
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/directional.rsi
-    state: uranium_window
   objectType: Structure
   placementMode: SnapgridCenter
 
 - type: construction
-  name: directional reinforced uranium window
   id: UraniumReinforcedWindowDirectional
   graph: WindowDirectional
   startNode: start
   targetNode: uraniumReinforcedWindowDirectional
   category: construction-category-structures
-  description: Clear.
   canBuildInImpassable: true
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
-  icon:
-    sprite: Structures/Windows/directional.rsi
-    state: uranium_reinforced_window
   objectType: Structure
   placementMode: SnapgridCenter
 #SS220-craft-end

@@ -4,9 +4,6 @@
   startNode: start
   targetNode: wall
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Walls/web.rsi #SS220-Walss-Sprite-Update-V4
-    state: full
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false

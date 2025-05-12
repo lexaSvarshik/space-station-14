@@ -48,9 +48,6 @@
   startNode: start
   targetNode: cable_terminal
   category: construction-category-utilities
-  icon:
-    sprite: SS220/Structures/Power/cable_terminal.rsi #ss220-engineering-update-power
-    state: term
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -264,9 +261,6 @@
   startNode: start
   targetNode: sensor
   category: construction-category-structures
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gas_pipe_sensor.rsi #ss220 engineering-update-atmos
-    state: icon
   placementMode: SnapgridCenter
   objectType: Structure
   canRotate: true
@@ -280,9 +274,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
 
 - type: construction
   id: GasPipeStraight
@@ -292,9 +283,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
 
 - type: construction
   id: GasPipeBend
@@ -304,9 +292,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeBend
 
 - type: construction
   id: GasPipeTJunction
@@ -316,9 +301,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeTJunction
 
 - type: construction
   id: GasPipeFourway
@@ -328,9 +310,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeFourway
 
 # ATMOS UNARY
 - type: construction
@@ -341,14 +320,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_off
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
-  - sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_off
   conditions:
     - !type:NoUnstackableInTile
 
@@ -360,14 +331,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_passive
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
-  - sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_passive
   conditions:
     - !type:NoUnstackableInTile
 
@@ -379,14 +342,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/scrubber.rsi #ss220 engineering-update-atmos
-    state: scrub_off
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
-  - sprite: SS220/Structures/Piping/Atmospherics/scrubber.rsi #ss220 engineering-update-atmos
-    state: scrub_off
   conditions:
     - !type:NoUnstackableInTile
 
@@ -398,14 +353,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/outletinjector.rsi #ss220 engineering-update-atmos
-    state: injector
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
-  - sprite: SS220/Structures/Piping/Atmospherics/outletinjector.rsi #ss220 engineering-update-atmos
-    state: injector
   conditions:
     - !type:NoUnstackableInTile
 
@@ -418,14 +365,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpPressure
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpPressure
   conditions:
     - !type:NoUnstackableInTile
 
@@ -437,14 +376,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpVolume
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpVolume
   conditions:
     - !type:NoUnstackableInTile
 
@@ -456,14 +387,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpPassiveGate
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpPassiveGate
   conditions:
     - !type:NoUnstackableInTile
 
@@ -475,14 +398,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpManualValve
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpManualValve
   conditions:
     - !type:NoUnstackableInTile
 
@@ -494,14 +409,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpSignalValve
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/pump.rsi #ss220 engineering-update-atmos
-    state: pumpSignalValve
   conditions:
   - !type:NoUnstackableInTile
 
@@ -513,14 +420,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gascanisterport.rsi #ss220 engineering-update-atmos
-    state: gasCanisterPort
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeHalf
-  - sprite: SS220/Structures/Piping/Atmospherics/gascanisterport.rsi #ss220 engineering-update-atmos
-    state: gasCanisterPort
   conditions:
     - !type:NoUnstackableInTile
 
@@ -532,14 +431,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_off
-  layers:
-  - sprite: SS220/Structures/Piping/Atmospherics/pipe.rsi #ss220 engineering-update-atmos
-    state: pipeStraight
-  - sprite: SS220/Structures/Piping/Atmospherics/vent.rsi #ss220 engineering-update-atmos
-    state: vent_off
 
 - type: construction
   id: HeatExchanger
@@ -549,9 +440,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/heatexchanger.rsi #ss220 engineering-update-atmos
-    state: heStraight
 
 - type: construction
   id: HeatExchangerBend
@@ -571,9 +459,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gasfilter.rsi #ss220 engineering-update-atmos
-    state: gasFilter
   mirror: GasFilterFlipped
   conditions:
     - !type:NoUnstackableInTile
@@ -587,9 +472,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gasfilter.rsi #ss220 engineering-update-atmos
-    state: gasFilterF
   mirror: GasFilter
   conditions:
     - !type:NoUnstackableInTile
@@ -602,9 +484,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gasmixer.rsi #ss220 engineering-update-atmos
-    state: gasMixer
   mirror: GasMixerFlipped
   conditions:
     - !type:NoUnstackableInTile
@@ -618,9 +497,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/gasmixer.rsi #ss220 engineering-update-atmos
-    state: gasMixerF
   mirror: GasMixer
   conditions:
     - !type:NoUnstackableInTile
@@ -633,9 +509,6 @@
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  icon:
-    sprite: SS220/Structures/Piping/Atmospherics/pneumaticvalve.rsi #ss220 engineering-update-atmos
-    state: off
   conditions:
     - !type:NoUnstackableInTile
 

@@ -55,9 +55,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfWood
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/wood.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -69,9 +66,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfMetal
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/metal.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -83,9 +77,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfGlass
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/glass.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -98,9 +89,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfRWood
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/wood.rsi #SS220 Shelfs Resprite
-    state: rbase
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -112,9 +100,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfRMetal
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/metal.rsi #SS220 Shelfs Resprite
-    state: rbase
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -126,9 +111,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfRGlass
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/glass.rsi #SS220 Shelfs Resprite
-    state: rbase
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -141,9 +123,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfBar
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/Departments/Service/bar.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -155,9 +134,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfKitchen
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/Departments/Service/kitchen.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
@@ -169,9 +145,6 @@
   graph: Shelf
   startNode: start
   targetNode: ShelfChemistry
-  icon:
-    sprite: SS220/Structures/Storage/Shelfs/Departments/Medical/chemistry.rsi #SS220 Shelfs Resprite
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true

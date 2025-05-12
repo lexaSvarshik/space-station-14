@@ -36,7 +36,6 @@
   startNode: start
   targetNode: done
   category: construction-category-storage
-  icon: { sprite: SS220/Structures/Storage/wall_locker.rsi, state: generic_icon } # SS220 wall lockers resprite
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: true

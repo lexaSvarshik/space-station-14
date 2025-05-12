@@ -41,9 +41,6 @@
   startNode: start
   targetNode: chairBrass
   category: construction-category-furniture
-  icon:
-    sprite: Corvax/Structures/Furniture/chairs.rsi # Corvax-Resprite
-    state: brass # Corvax-Resprite
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false

@@ -171,7 +171,7 @@
       - to: electronics
         steps:
         - component: PowerCell
-          name: power cell
+          name: construction-graph-tag-power-cell
           store: battery-container
           icon:
             sprite: Objects/Power/power_cells.rsi
@@ -412,7 +412,7 @@
       - to: reinforcedElectronics
         steps:
         - component: PowerCell
-          name: power cell
+          name: construction-graph-tag-power-cell
           store: battery-container
           icon:
             sprite: Objects/Power/power_cells.rsi

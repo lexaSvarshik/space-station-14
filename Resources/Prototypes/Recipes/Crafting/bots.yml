@@ -5,9 +5,6 @@
   targetNode: bot
   category: construction-category-utilities
   objectType: Item
-  icon:
-    sprite: SS220/Mobs/Silicon/Bots/cleanbot.rsi #SS220 Clean & Med Bot Resprite
-    state: cleanbot
 
 - type: construction
   id: firebot
@@ -40,9 +37,6 @@
   targetNode: bot
   category: construction-category-utilities
   objectType: Item
-  icon:
-    sprite: SS220/Mobs/Silicon/Bots/medibot.rsi #SS220 Clean & Med Bot Resprite
-    state: medibot
 
 - type: construction
   id: mimebot

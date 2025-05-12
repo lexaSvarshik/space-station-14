@@ -9,7 +9,7 @@
             - tag: Sunglasses
               name: construction-graph-tag-sun-glasses
               icon:
-                sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+                sprite: SS220/Clothing/Eyes/Glasses/security.rsi # SS220 resprite
                 state: icon
               doAfter: 5
             - tag: HudSecurity

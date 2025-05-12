@@ -84,8 +84,6 @@
   startNode: start
   targetNode: glassesSec
   category: construction-category-clothing
-  description: A pair of sunglasses, modified to have a built-in security HUD.
-  icon: { sprite: SS220/Clothing/Eyes/Glasses/security.rsi, state: icon } #SS220-updated
   objectType: Item
 
 - type: construction

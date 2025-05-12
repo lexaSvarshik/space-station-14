@@ -156,16 +156,6 @@
           32:
             sprite: Mobs/Species/Moth/displacement.rsi
             state: jumpsuit-female
-  #ss220 emote 5 sec start
-  - type: Emoting
-    chatEmoteCooldown: 5.0
-  #ss220 emote 5 sec end
-  #SS220 LimitationRevive - start
-  - type: LimitationRevive
-    typeDamageOnDead:
-      types:
-        Сerebral: 400
-  #SS220 LimitationRevive - end
       back:
         sizeMaps:
           32:
@@ -212,6 +202,16 @@
           32:
             sprite: Mobs/Species/Moth/displacement.rsi
             state: shoes
+  #ss220 emote 5 sec start
+  - type: Emoting
+    chatEmoteCooldown: 5.0
+  #ss220 emote 5 sec end
+  #SS220 LimitationRevive - start
+  - type: LimitationRevive
+    typeDamageOnDead:
+      types:
+        Сerebral: 400
+  #SS220 LimitationRevive - end
 
 - type: entity
   parent: BaseSpeciesDummy
