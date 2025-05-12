@@ -10,6 +10,7 @@ using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
 using Content.Shared.Popups;
+using Content.Shared.Storage;
 using Robust.Shared.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
@@ -36,6 +37,7 @@ public abstract class SharedJetpackSystem : EntitySystem
         SubscribeLocalEvent<JetpackComponent, ToggleJetpackEvent>(OnJetpackToggle);
 
         SubscribeLocalEvent<JetpackUserComponent, RefreshWeightlessModifiersEvent>(OnJetpackUserWeightlessMovement);
+
         SubscribeLocalEvent<JetpackUserComponent, CanWeightlessMoveEvent>(OnJetpackUserCanWeightless);
         SubscribeLocalEvent<JetpackUserComponent, EntParentChangedMessage>(OnJetpackUserEntParentChanged);
         SubscribeLocalEvent<JetpackUserComponent, MagbootsUpdateStateEvent>(OnMagbootsUpdateState); //SS220 Magboots with jet fix
@@ -119,10 +121,27 @@ public abstract class SharedJetpackSystem : EntitySystem
         userComp.WeightlessFriction = component.Friction;
         userComp.WeightlessFrictionNoInput = component.Friction;
         _movementSpeedModifier.RefreshWeightlessModifiers(user);
+
+        // TODO_ss220: this could be obsolete
+        //ss220 fix activated jetpack in container start
+        if (!TryComp<JetpackComponent>(jetpackUid, out var jetpackComponent))
+            return;
+
+        jetpackComponent.User = user;
+        //ss220 fix activated jetpack in container end
     }
 
     private void RemoveUser(EntityUid uid, JetpackComponent component)
     {
+        //ss220 fix activated jetpack in container start
+        if (!TryComp<JetpackUserComponent>(uid, out var jetpackUser))
+            return;
+
+        if (!TryComp<JetpackComponent>(jetpackUser.Jetpack, out var jetpackComponent))
+            return;
+
+        jetpackComponent.User = null;
+        //ss220 fix activated jetpack in container end
         if (!RemComp<JetpackUserComponent>(uid))
             return;
 
