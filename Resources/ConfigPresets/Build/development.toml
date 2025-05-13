@@ -39,5 +39,5 @@ preload_grids = false
 see_own_notes = true
 
 [ic]
-# random_characters = false # Nu-uh
+# random_characters = false # SS220
 random_species_weights = ""
