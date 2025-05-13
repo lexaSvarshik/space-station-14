@@ -720,3 +720,6 @@ AirlockMaintIntLocked: AirlockMaintLocked
 # 2025-04-26
 ComputerCargoShuttle: ComputerShuttleCargo
 CargoShuttleComputerCircuitboard: CargoShuttleConsoleCircuitboard
+
+# 2025-05-13 SS220 mapped old borg modules
+BorgModuleDefibrillator : BorgModuleRescue
