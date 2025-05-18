@@ -1,21 +1,4 @@
 ﻿Entries:
-- author: Kemran, Okroshka, BLACKWOLF, Python, Plagexx
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
-      \u0439\u0442\u044B \u0444\u0440\u0430\u043A\u0446\u0438\u043E\u043D\u043D\u044B\
-      \u0445 \u0443\u043D\u0438\u0444\u043E\u0440\u043C: \u0443\u043D\u0438\u0444\u043E\
-      \u0440\u043C\u0430 NanoTrasen, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\u0430\
-      \ \u0441\u0442\u0430\u0440\u0448\u0435\u0433\u043E \u0438\u043D\u0436\u0435\u043D\
-      \u0435\u0440\u0430 NT \u0438 Syndie, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\
-      \u0430 \u0440\u0435\u043A\u0440\u0443\u0442\u0430 NT \u0438 Syndie, \u0443\u043D\
-      \u0438\u0444\u043E\u0440\u043C\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0434\
-      \u0438\u043A\u0430 NT \u0438 Syndie, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\
-      \u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u043D\u0438\u043A\u0430 NT \u0438\
-      \ Syndie."
-    type: Tweak
-  id: 491
-  time: '2024-09-11T19:53:48.0000000+00:00'
-  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1840
 - author: Kemran
   changes:
   - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0441\u043F\u0440\
@@ -6728,3 +6711,14 @@
   id: 990
   time: '2025-05-17T07:46:29.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/2916
+- author: creamybag
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043F\u0430\u0440\
+      \u0430\u0434\u043D\u044B\u0439 \u043F\u043B\u0430\u0449 \u0438 \u0444\u0443\u0440\
+      \u0430\u0436\u043A\u0430 \u0434\u043B\u044F \u0421\u041C\u041E \u0437\u0430\
+      \ 65 \u043D\u0430\u0438\u0433\u0440\u0430\u043D\u043D\u044B\u0445 \u0447\u0430\
+      \u0441\u043E\u0432"
+    type: Add
+  id: 991
+  time: '2025-05-18T08:46:17.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/2927
