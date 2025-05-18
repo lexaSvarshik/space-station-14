@@ -1,16 +1,4 @@
 ﻿Entries:
-- author: kirus59
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043E\u0437\u0432\
-      \u0443\u0447\u043A\u0430 \u044D\u043C\u043E\u0443\u0442\u043E\u0432 \u043F\u0440\
-      \u0438 \u043D\u0430\u0434\u0435\u0432\u0430\u043D\u0438\u0438 \u0441\u043F\u0435\
-      \u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043E\u0434\u0435\u0436\u0434\
-      \u044B (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440 \u043A\u043E\u0448\u0430\
-      \u0447\u044C\u0438\u0445 \u0443\u0448\u0435\u043A)."
-    type: Add
-  id: 495
-  time: '2024-09-12T20:39:15.0000000+00:00'
-  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1846
 - author: yulilok
   changes:
   - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0440\u0435\u043C\
@@ -6732,3 +6720,12 @@
   id: 994
   time: '2025-05-18T19:35:16.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/2936
+- author: creamybag
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D \u0441\u043F\u0440\u0430\
+      \u0439\u0442 \u0441\u043A\u0430\u0444\u0430\u043D\u0434\u0440\u0430 \u043F\u0430\
+      \u0440\u0430\u043C\u0435\u0434\u0438\u043A\u0430"
+    type: Tweak
+  id: 995
+  time: '2025-05-18T21:56:05.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/2935
