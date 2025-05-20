@@ -19,7 +19,11 @@
       "Electro": {62: 0} #i needed generic sounding synth presets, sue me
       "Bubbles": {63: 0}
   - type: Sprite
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+    sprite: SS220/Objects/Fun/Instruments/h_synthesizer.rsi # SS220 Synthesizer resprite
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: SS220/Objects/Fun/Instruments/h_synthesizer.rsi # SS220 Synthesizer resprite
   - type: StaticPrice
     price: 90
 
@@ -35,10 +39,11 @@
     allowProgramChange: true
     respectMidiLimits: false
   - type: Sprite
-    sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+    sprite: SS220/Objects/Fun/Instruments/h_synthesizer.rsi # SS220 Synthesizer resprite
     state: supersynth
   - type: Item
     heldPrefix: super
+    sprite: SS220/Objects/Fun/Instruments/h_synthesizer.rsi # SS220 Synthesizer resprite
 
 - type: entity
   parent: BaseKeyedInstrument

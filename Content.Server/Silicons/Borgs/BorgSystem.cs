@@ -6,6 +6,7 @@ using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Hands.Systems;
 using Content.Server.PowerCell;
+using Content.Server.SS220.Events;
 using Content.Shared.Alert;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
@@ -29,6 +30,7 @@ using Content.Shared.Wires;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Diagnostics.CodeAnalysis;
@@ -60,6 +62,7 @@ public sealed partial class BorgSystem : SharedBorgSystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ISharedPlayerManager _player = default!;
+    [Dependency] private readonly IPrototypeManager _protoManager = default!; // SS220 Borgs-Id-fix
 
     [ValidatePrototypeId<JobPrototype>]
     public const string BorgJobId = "Borg";
@@ -83,6 +86,8 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
         SubscribeLocalEvent<BorgBrainComponent, MindAddedMessage>(OnBrainMindAdded);
         SubscribeLocalEvent<BorgBrainComponent, PointAttemptEvent>(OnBrainPointAttempt);
+
+        SubscribeLocalEvent<BorgChassisComponent, GetInsteadIdCardNameEvent>(OnGetBorgName); // SS220 Borgs-Id-fix
 
         InitializeModules();
         InitializeMMI();
@@ -358,4 +363,17 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
         return true;
     }
+
+    // SS220 Borgs-Id-fix start
+    private void OnGetBorgName(EntityUid uid, BorgChassisComponent component, ref GetInsteadIdCardNameEvent args)
+    {
+
+        if (TryComp<BorgSwitchableTypeComponent>(uid, out var switchComp)
+            && switchComp.SelectedBorgType is not null
+            && _protoManager.TryIndex<BorgTypePrototype>(switchComp.SelectedBorgType, out var borgType))
+            args.Name = $"\\[{Loc.GetString(borgType.Name)}\\] ";
+        else
+            args.Name = $"\\[{Loc.GetString("borg-type-prototype-generic")}\\] ";
+    }
+    // SS220 Borgs-Id-fix end
 }
