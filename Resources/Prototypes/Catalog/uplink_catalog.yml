@@ -145,9 +145,9 @@
   productEntity: ClothingHandsKnuckleDustersSyndicate
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 2 # SS220 knuckleduster-cost
   cost:
-    Telecrystal: 6
+    Telecrystal: 3 # SS220 knuckleduster-cost
   categories:
   - UplinkWeaponry
 
